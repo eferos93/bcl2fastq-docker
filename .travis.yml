@@ -1,7 +1,7 @@
 services:
   - docker
 install:
-  - docker built -t bcl2fastq .
+  - docker build -t bcl2fastq .
 script: 
   - docker images bcl2fastq
   - docker run bcl2fastq
