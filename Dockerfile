@@ -20,7 +20,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-FROM umccr/bcl2fastq
+FROM dceoy/bcl2fastq
 
 LABEL base.image="umccr/bcl2fastq"
 LABEL version="1"
