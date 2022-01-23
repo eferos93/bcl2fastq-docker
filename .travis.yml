@@ -4,7 +4,7 @@ install:
   - docker build -t bcl2fastq .
 script: 
   - docker images bcl2fastq
-  - docker run bcl2fastq
+  - docker run bcl2fastq --version
 after_success:   
   - docker tag bcl2fastq eferos93/bcl2fastq:latest
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
