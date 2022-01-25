@@ -32,4 +32,4 @@ LABEL license="https://github.com/eferos93/bcl2fastq-docker/blob/main/LICENSE"
 LABEL maintainer="Eros Fabrici"
 LABEL maintainer.email="eros.fabrici@gmail.com"
 
-RUN mkdir genomic_data
+# RUN mkdir genomic_data
