@@ -34,6 +34,8 @@ LABEL maintainer.email="eros.fabrici@gmail.com"
 
 RUN mkdir unit_test
 COPY bcl_unit_test_data/ /unit_test/
-RUN chmod 777 /unit_test/bcl_unit_test_data/RunInfo.xml
+WORKDIR /unit_test
+RUN ls -l
+# RUN chmod 777 /unit_test/bcl_unit_test_data/RunInfo.xml
 RUN mkdir genomic_data_test
 RUN mkdir illumina_run
