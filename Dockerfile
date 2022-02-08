@@ -33,7 +33,7 @@ LABEL maintainer="Eros Fabrici"
 LABEL maintainer.email="eros.fabrici@gmail.com"
 
 RUN mkdir unit_test_data
-COPY bcl_unit_test_data/ /unit_test/
+COPY bcl_unit_test_data/ /unit_test_data/
 
 RUN mkdir genomic_data_test
 RUN mkdir illumina_run
