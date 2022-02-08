@@ -4,7 +4,7 @@ install:
   - docker build -t bcl2fastq .
 script: 
   - docker images bcl2fastq
-  - docker run bcl2fastq --no-lane-splitting -R unit_test/bcl_unit_test_data -o unit_test/output
+  - docker run bcl2fastq --no-lane-splitting -R unit_test_data -o unit_test_data/output
 after_success:   
   - docker tag bcl2fastq eferos93/bcl2fastq:latest
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
