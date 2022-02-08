@@ -32,8 +32,8 @@ LABEL license="https://github.com/eferos93/bcl2fastq-docker/blob/main/LICENSE"
 LABEL maintainer="Eros Fabrici"
 LABEL maintainer.email="eros.fabrici@gmail.com"
 
-RUN mkdir unit_test
+RUN mkdir unit_test_data
 COPY bcl_unit_test_data/ /unit_test/
-# RUN chmod 777 /unit_test/bcl_unit_test_data/RunInfo.xml
+
 RUN mkdir genomic_data_test
 RUN mkdir illumina_run
